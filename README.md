@@ -67,6 +67,11 @@ executable('project',
            install : true)
 ```
 
+- Does meson work with vcpkg?
+  - https://github.com/Neumann-A/meson-vcpkg
+  - https://www.reddit.com/r/meson/comments/m4i9o1/does_meson_work_with_vcpkg/?rdt=59720
+  
+
 <hr />
 
 # Install
