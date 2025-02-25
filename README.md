@@ -26,7 +26,11 @@ glfwdep = dependency('glfw3')
 opengldep = dependency('gl')
 
 # Build the executable
-executable('target_run', 'main.c', dependencies : [glfwdep, opengldep])
+# executable('target_run', 'main.c', dependencies : [glfwdep, opengldep])
+
+# Build the executable(폴더 src로 넣어서 깔끔하게)
+executable('target_run', 'src/main.c', dependencies : [glfwdep, opengldep])
+
 ```
 
 - `meson.build` 약간 응용

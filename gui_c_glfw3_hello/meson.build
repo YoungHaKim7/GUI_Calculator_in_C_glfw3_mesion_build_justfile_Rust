@@ -9,4 +9,4 @@ glfwdep = dependency('glfw3')
 opengldep = dependency('gl')
 
 # Build the executable
-executable('target_run', 'main.c', dependencies : [glfwdep, opengldep])
+executable('target_run', 'src/main.c', dependencies : [glfwdep, opengldep])
