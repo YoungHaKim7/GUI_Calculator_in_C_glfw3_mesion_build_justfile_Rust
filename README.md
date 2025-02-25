@@ -33,6 +33,21 @@ executable('target_run', 'src/main.c', dependencies : [glfwdep, opengldep])
 
 ```
 
+- justfile(meson치기 귀찮다.)
+
+```justfile
+target := "builddir"
+
+r:
+    rm -rf {{target}}
+    meson setup {{target}}
+    meson compile -C {{target}}
+    ./{{target}}/target_run
+
+c:
+    rm -rf {{target}}
+```
+
 - `meson.build` 약간 응용
 
 ```bash
