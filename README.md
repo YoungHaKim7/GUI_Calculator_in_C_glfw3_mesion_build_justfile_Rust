@@ -1,5 +1,16 @@
 # GUI_Calculaor_in_C
 
+
+<hr />
+
+# build
+
+```bash
+pkg-config --static --libs glfw3 -lglfw -lrt -lm -ldl
+```
+
+<hr />
+
 # Install
 
 - https://www.glfw.org/
