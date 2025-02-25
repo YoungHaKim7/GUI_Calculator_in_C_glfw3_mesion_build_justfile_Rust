@@ -10,7 +10,7 @@
 pacman -S glfw ttf-roboto-mono
 
 # ubuntu
- cglm libclipboard 
+sudo apt install libwayland-dev libxkbcommon-dev xorg-dev
 ```
 
 <hr />
