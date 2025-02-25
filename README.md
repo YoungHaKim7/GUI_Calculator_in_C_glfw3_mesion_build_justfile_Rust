@@ -48,6 +48,25 @@ c:
     rm -rf {{target}}
 ```
 
+- `.clang-format`
+```.clang-format
+# BasedOnStyle: WebKit
+# LLVM, Google, Chromium, Mozilla, WebKit
+
+BasedOnStyle: WebKit
+IndentWidth: 4
+ContinuationIndentWidth: 4
+IndentCaseLabels: false
+IndentCaseBlocks: false
+IndentGotoLabels: true
+IndentPPDirectives: None
+IndentExternBlock: NoIndent
+
+ColumnLimit: 80
+
+
+```
+
 - `meson.build` 약간 응용
 
 ```bash
@@ -70,7 +89,7 @@ executable('project',
 - Does meson work with vcpkg?
   - https://github.com/Neumann-A/meson-vcpkg
   - https://www.reddit.com/r/meson/comments/m4i9o1/does_meson_work_with_vcpkg/?rdt=59720
-  
+
 
 <hr />
 
