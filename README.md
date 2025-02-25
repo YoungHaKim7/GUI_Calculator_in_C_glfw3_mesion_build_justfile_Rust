@@ -13,6 +13,24 @@ pkg-config --static --libs glfw3 -lglfw -lrt -lm -ldl
   - https://www.glfw.org/docs/3.3/build_guide.html
   - https://stackoverflow.com/questions/78353973/meson-wrap-install-of-glfw3-is-not-able-to-find-libglfw3-3-dll-when-running-comp
 
+- 간단하게 build(glfw3)
+
+```bash
+project('gui_c_glfw3', 'c')
+
+# Ensure pkg-config is available
+pkg = import('pkgconfig')
+
+# Define the GLFW and OpenGL dependencies
+glfwdep = dependency('glfw3')
+opengldep = dependency('gl')
+
+# Build the executable
+executable('target_run', 'main.c', dependencies : [glfwdep, opengldep])
+```
+
+- 약간 응용
+
 ```bash
 project('project', 'cpp',
   version : '0.1',
