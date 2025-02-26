@@ -4,11 +4,13 @@
   - [(외부링크_Vertex Shader와 Fragment Shader](https://kyoungwhankim.github.io/ko/blog/opengl_triangle2/)
     - 삼각형을 그릴 때 필요한 셰이더는, 그리고 사실 가장 중요한 셰이더 두 개는 Vertex Shader와 Fragment Shader(또는 Pixel Shader라고도 함)입니다
 
+- [glfw3 install](#install)
+
 - 반복 작업
   - [glfw3 build](#build)
-    - [meson.build간단]()
-    - [justfile]()
-    - [.clang-format]()
+    - [meson.build간단](#mesonbuild-간단하게-buildglfw3)
+    - [justfile](#justfilemeson치기-귀찮다)
+    - [.clang-format](#clang-format)
 
 <hr />
 
