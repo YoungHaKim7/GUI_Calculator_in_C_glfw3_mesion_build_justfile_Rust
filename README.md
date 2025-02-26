@@ -1,7 +1,7 @@
 # GUI_Calculaor_in_C
 
 - [외부링크OpenGL 소개: OpenGL, GLFW, GLEW란? [OpenGL E02]OpenGL/GLEW/GLFW](https://kyoungwhankim.github.io/ko/blog/opengl_intro/)
-  -[(외부링크_Vertex Shader와 Fragment Shader](https://kyoungwhankim.github.io/ko/blog/opengl_triangle2/)
+  - [(외부링크_Vertex Shader와 Fragment Shader](https://kyoungwhankim.github.io/ko/blog/opengl_triangle2/)
     - 삼각형을 그릴 때 필요한 셰이더는, 그리고 사실 가장 중요한 셰이더 두 개는 Vertex Shader와 Fragment Shader(또는 Pixel Shader라고도 함)입니다
 
 <hr />
