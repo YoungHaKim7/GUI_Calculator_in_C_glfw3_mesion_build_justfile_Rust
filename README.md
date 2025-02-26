@@ -4,6 +4,17 @@
   - [(외부링크_Vertex Shader와 Fragment Shader](https://kyoungwhankim.github.io/ko/blog/opengl_triangle2/)
     - 삼각형을 그릴 때 필요한 셰이더는, 그리고 사실 가장 중요한 셰이더 두 개는 Vertex Shader와 Fragment Shader(또는 Pixel Shader라고도 함)입니다
 
+- 반복 작업
+  - [glfw3 build](#build)
+    - [meson.build간단]()
+    - [justfile]()
+    - [.clang-format]()
+
+<hr />
+
+- tutorial
+  - [(240513)Make a GUI Calculator in C like a real Chad | Cococry](#240513make-a-gui-calculator-in-c-like-a-real-chad--cococry)
+
 <hr />
 
 # build
@@ -16,7 +27,7 @@ pkg-config --static --libs glfw3 -lglfw -lrt -lm -ldl
   - https://www.glfw.org/docs/3.3/build_guide.html
   - https://stackoverflow.com/questions/78353973/meson-wrap-install-of-glfw3-is-not-able-to-find-libglfw3-3-dll-when-running-comp
 
-- `meson.build` 간단하게 build(glfw3)
+## `meson.build` 간단하게 build(glfw3)
 
 ```bash
 project('gui_c_glfw3', 'c')
@@ -36,7 +47,7 @@ executable('target_run', 'src/main.c', dependencies : [glfwdep, opengldep])
 
 ```
 
-- justfile(meson치기 귀찮다.)
+## justfile(meson치기 귀찮다.)
 
 ```justfile
 target := "builddir"
@@ -51,7 +62,8 @@ c:
     rm -rf {{target}}
 ```
 
-- `.clang-format`
+## `.clang-format`
+
 ```.clang-format
 # BasedOnStyle: WebKit
 # LLVM, Google, Chromium, Mozilla, WebKit
