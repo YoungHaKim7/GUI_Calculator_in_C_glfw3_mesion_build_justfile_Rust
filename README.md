@@ -122,6 +122,9 @@ pacman -S glfw ttf-roboto-mono
 # ubuntu
 sudo apt install libwayland-dev libxkbcommon-dev xorg-dev
 
+# macOS
+brew install glfw mesa-glu && brew install --cask font-roboto-mono
+
 ```
 
 - To install GLFW3 on Ubuntu Linux, use the command `sudo apt-get install libglfw3-dev` in your terminal, which will install the necessary GLFW development libraries, allowing you to link against GLFW in your projects; if you only need the runtime libraries, use `sudo apt-get install libglfw3`
