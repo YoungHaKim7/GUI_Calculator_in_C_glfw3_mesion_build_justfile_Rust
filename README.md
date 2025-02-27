@@ -76,6 +76,27 @@ executable('target_run',
 
 ```
 
+- `meson.build` (C++) 약간 응용
+
+```bash
+project('project', 'cpp',
+  version : '0.1',
+  default_options : ['warning_level=3', 'cpp_std=c++14'])
+
+glfw_dep = dependency('glfw3')
+lua_dep = dependency('lua')
+
+src_files = ['axolotl.cpp', 'Window.cpp']
+
+executable('project',
+           src_files,
+           win_subsystem: 'windows',
+           dependencies: [glfw_dep, lua_dep],
+           install : true)
+```
+
+<hr />
+
 ## justfile(meson치기 귀찮다.)
 
 ```justfile
@@ -109,25 +130,6 @@ IndentExternBlock: NoIndent
 ColumnLimit: 80
 
 
-```
-
-- `meson.build` 약간 응용
-
-```bash
-project('project', 'cpp',
-  version : '0.1',
-  default_options : ['warning_level=3', 'cpp_std=c++14'])
-
-glfw_dep = dependency('glfw3')
-lua_dep = dependency('lua')
-
-src_files = ['axolotl.cpp', 'Window.cpp']
-
-executable('project',
-           src_files,
-           win_subsystem: 'windows',
-           dependencies: [glfw_dep, lua_dep],
-           install : true)
 ```
 
 - Does meson work with vcpkg?
