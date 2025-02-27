@@ -57,11 +57,11 @@ executable('target_run', 'src/main.c', dependencies : [glfwdep, opengldep])
 project(
   'gui_c_glfw3', 'c'
   version : '0.1',
-  default_options : ['warning_level=everything', 'c_std=c17'])
-  
+  default_options : ['warning_level=everything', 'buildtype=debugoptimized','c_std=c17'])
+# default_options : ['warning_level=everything', 'buildtype=release','c_std=c17'])
+# buildtype {plain, debug, debugoptimized, release, minsize, custom}
+# c_std=none, c89, c99, c11, c17, c18, c2x, c23, c2y, gnu89, gnu99, gnu11, gnu17, gnu18, gnu2x, gnu23, gnu2y
 
-# Ensure pkg-config is available
-pkg = import('pkgconfig')
 
 # Define the GLFW and OpenGL dependencies
 glfwdep = dependency('glfw3')
