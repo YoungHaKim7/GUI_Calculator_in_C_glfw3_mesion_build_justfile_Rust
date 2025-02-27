@@ -52,7 +52,7 @@ executable('target_run', 'src/main.c', dependencies : [glfwdep, opengldep])
 ## justfile(meson치기 귀찮다.)
 
 ```justfile
-target := "builddir"
+target := "target"
 
 r:
     rm -rf {{target}}
