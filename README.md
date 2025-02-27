@@ -66,6 +66,7 @@ project(
 ])
 
 # default_options : ['warning_level=everything', 'buildtype=release','c_std=c17'])
+# warning_level {0, 1, 2, 3, everything}
 # buildtype {plain, debug, debugoptimized, release, minsize, custom}
 # c_std=none, c89, c99, c11, c17, c18, c2x, c23, c2y, gnu89, gnu99, gnu11, gnu17, gnu18, gnu2x, gnu23, gnu2y
 
