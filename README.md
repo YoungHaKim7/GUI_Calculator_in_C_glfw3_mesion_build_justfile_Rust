@@ -85,6 +85,16 @@ executable('target_run',
 
 ```
 
+<hr />
+
+- https://groups.google.com/g/mesonbuild/c/o2NopZrSj5g?pli=1
+- If I use `--buildtype=release` it optimizes `-O2` and the executable contains no debug symbol.
+- If I use `--buildtype=debug` it does not optimize at all and uses `-g`.
+- If I use `--buildtype=debugoptimized` it optimizes `-O2` and uses `-g`.
+
+
+<hr />
+
 - `meson.build` (C++) 약간 응용
 
 ```bash
