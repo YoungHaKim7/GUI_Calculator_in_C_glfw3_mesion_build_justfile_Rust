@@ -82,8 +82,8 @@ src_files = [
 # Build the executable(폴더 src로 넣어서 깔끔하게)
 executable('target_run',
            src_files,
-           dependencies : [glfwdep, opengldep])
-
+           dependencies : [glfwdep, opengldep]
+)
 ```
 
 <hr />
