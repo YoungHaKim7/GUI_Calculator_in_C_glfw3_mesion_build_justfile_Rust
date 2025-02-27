@@ -57,7 +57,7 @@ executable('target_run', 'src/main.c', dependencies : [glfwdep, opengldep])
 
 ```bash
 project(
-  '@BASENAME@', 'c',
+  'my_project', 'c',
   version : '0.1',
   default_options : [
     'warning_level=3',
@@ -80,7 +80,7 @@ src_files = [
 ]
 
 # Build the executable(폴더 src로 넣어서 깔끔하게)
-executable('@BASENAME@',
+executable('my_project',
            src_files,
            dependencies : [glfwdep, opengldep]
 )
