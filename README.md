@@ -33,6 +33,7 @@ pkg-config --static --libs glfw3 -lglfw -lrt -lm -ldl
 
 ## `meson.build` 간단하게 build(glfw3)[|🔝|](#link)
 
+- C언어
 ```bash
 project('gui_c_glfw3', 'c')
 
@@ -52,6 +53,7 @@ executable('target_run', 'src/main.c', dependencies : [glfwdep, opengldep])
 ```
 
 - https://mesonbuild.com/Builtin-options.html
+- C언어(c_std=c17)
 
 ```bash
 project(
