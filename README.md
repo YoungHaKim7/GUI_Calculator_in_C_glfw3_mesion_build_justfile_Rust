@@ -19,6 +19,16 @@
 - tutorial
   - [(240513)Make a GUI Calculator in C like a real Chad | Cococry](#240513make-a-gui-calculator-in-c-like-a-real-chad--cococry)
 
+- glfw
+  - [glfw문서정리 context_guide]()
+
+
+<hr />
+
+# 문서 정리(glfw)[|🔝|](#link)
+- context_guide
+  - https://www.glfw.org/docs/3.3/context_guide.html
+
 <hr />
 
 # build[|🔝|](#link)
