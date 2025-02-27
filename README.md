@@ -8,7 +8,7 @@
 
 - 반복 작업
   - [glfw3 build](#build)
-    - [meson.build간단](#mesonbuild-간단하게-buildglfw3)
+    - [meson.build간단(C언어)](#mesonbuild-간단하게-buildglfw3)
     - [justfile](#justfilemeson치기-귀찮다)
     - [.clang-format](#clang-format)
 
@@ -46,6 +46,31 @@ opengldep = dependency('gl')
 
 # Build the executable(폴더 src로 넣어서 깔끔하게)
 executable('target_run', 'src/main.c', dependencies : [glfwdep, opengldep])
+
+```
+
+- https://mesonbuild.com/Builtin-options.html
+
+```bash
+project(
+  'gui_c_glfw3', 'c'
+  version : '0.1',
+  default_options : ['warning_level=everything', 'c_std=c17'])
+  
+
+# Ensure pkg-config is available
+pkg = import('pkgconfig')
+
+# Define the GLFW and OpenGL dependencies
+glfwdep = dependency('glfw3')
+opengldep = dependency('gl')
+
+src_files = ['src/main.c']
+
+# Build the executable(폴더 src로 넣어서 깔끔하게)
+executable('target_run',
+           src_files,
+           dependencies : [glfwdep, opengldep])
 
 ```
 
