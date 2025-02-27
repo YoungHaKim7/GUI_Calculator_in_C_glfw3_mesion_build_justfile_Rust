@@ -53,16 +53,18 @@ executable('target_run', 'src/main.c', dependencies : [glfwdep, opengldep])
 ```
 
 - https://mesonbuild.com/Builtin-options.html
-- C언어(c_std=c17)
+- C언어(c_std=c11)
 
 ```bash
 project(
   'my_project', 'c',
   version : '0.1',
   default_options : [
-    'warning_level=3',
-    'buildtype=debugoptimized',
-    'c_std=c17'
+    'buildtype=debugoptimized', # Equivalent to -O3
+    'c_std=c11',               # Use C11 standard (commonly used with -pedantic) or c17
+    'warning_level=3',         # Equivalent to -Wall -Wextra
+    'b_lto=true',              # Enable Link-Time Optimization (optional, for -O3)
+    'b_pie=true',              # Enable Position Independent Executable (optional)
 ])
 
 # default_options : ['warning_level=everything', 'buildtype=release','c_std=c17'])
@@ -84,7 +86,11 @@ src_files = [
 executable(my_project_name,
            src_files,
            dependencies : [glfwdep, opengldep]
-)
+          c_args: [
+            '-pedantic',       # Enable pedantic warnings
+            '-pedantic-errors', # Treat pedantic warnings as errors
+            '-ggdb'           # Generate debug information for GDB
+])
 ```
 
 <hr />
