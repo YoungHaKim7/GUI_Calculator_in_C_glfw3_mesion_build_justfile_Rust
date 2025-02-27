@@ -84,8 +84,8 @@ src_files = [
 
 # Build the executable(폴더 src로 넣어서 깔끔하게)
 executable(my_project_name,
-           src_files,
-           dependencies : [glfwdep, opengldep]
+          src_files,
+          dependencies : [glfwdep, opengldep]
           c_args: [
             '-pedantic',       # Enable pedantic warnings
             '-pedantic-errors', # Treat pedantic warnings as errors
