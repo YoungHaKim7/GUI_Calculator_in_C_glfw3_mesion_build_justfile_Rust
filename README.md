@@ -57,10 +57,10 @@ executable('target_run', 'src/main.c', dependencies : [glfwdep, opengldep])
 
 ```bash
 project(
-  '@BASENAME@', 'c'
+  '@BASENAME@', 'c',
   version : '0.1',
   default_options : [
-    'warning_level=everything',
+    'warning_level=3',
     'buildtype=debugoptimized',
     'c_std=c17'
 ])
