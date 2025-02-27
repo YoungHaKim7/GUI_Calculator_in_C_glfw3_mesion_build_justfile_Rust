@@ -40,6 +40,12 @@
 
 <hr />
 
+# glfw2 -> glfw3 migration guide
+
+- https://www.glfw.org/docs/3.3/moving_guide.html
+
+<hr />
+
 # build[|🔝|](#link)
 
 ```bash
