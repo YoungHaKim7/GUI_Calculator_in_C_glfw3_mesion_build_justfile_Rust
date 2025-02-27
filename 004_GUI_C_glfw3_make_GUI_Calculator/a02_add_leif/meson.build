@@ -21,17 +21,16 @@ glfwdep = dependency('glfw3')
 opengldep = dependency('gl')
 
 src_files = [
-  'src/main.c'
+  'src/main.c',
+  'src/leif.c'
 ]
-# 
-# Include directory for libelf
-libelf_include_dir = '/opt/homebrew/include/libelf'
+# Link against the custom library (e.g., libleif.a or libleif.so)
+# leifdep = meson.get_compiler('c').find_library('leif', required: true)
 
 # Build the executable(폴더 src로 넣어서 깔끔하게)
 executable(my_project_name,
           src_files,
           dependencies : [glfwdep, opengldep],
-          include_directories : libelf_include_dir,
           c_args: [
             '-pedantic',       # Enable pedantic warnings
             '-pedantic-errors', # Treat pedantic warnings as errors
