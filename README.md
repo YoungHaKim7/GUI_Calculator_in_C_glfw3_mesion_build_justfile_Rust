@@ -26,6 +26,8 @@
 <hr />
 
 # 문서 정리(glfw)[|🔝|](#link)
+- glfw tutorial eBooks
+  - https://www.glfw.org/docs/3.3/quick_guide.html
 - context_guide
   - https://www.glfw.org/docs/3.3/context_guide.html
 
