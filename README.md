@@ -70,6 +70,7 @@ project(
 # buildtype {plain, debug, debugoptimized, release, minsize, custom}
 # c_std=none, c89, c99, c11, c17, c18, c2x, c23, c2y, gnu89, gnu99, gnu11, gnu17, gnu18, gnu2x, gnu23, gnu2y
 
+my_project_name = meson.current_source_dir().split('/').get(-1)
 
 # Define the GLFW and OpenGL dependencies
 glfwdep = dependency('glfw3')
@@ -80,7 +81,7 @@ src_files = [
 ]
 
 # Build the executable(폴더 src로 넣어서 깔끔하게)
-executable('my_project',
+executable(my_project_name,
            src_files,
            dependencies : [glfwdep, opengldep]
 )
