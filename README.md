@@ -65,7 +65,8 @@ pkg = import('pkgconfig')
 glfwdep = dependency('glfw3')
 opengldep = dependency('gl')
 
-src_files = ['src/main.c']
+src_files = [
+  'src/main.c']
 
 # Build the executable(폴더 src로 넣어서 깔끔하게)
 executable('target_run',
