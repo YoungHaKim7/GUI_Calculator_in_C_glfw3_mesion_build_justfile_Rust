@@ -19,7 +19,7 @@
 
 <hr />
 
-# build
+# build[|🔝|](#link)
 
 ```bash
 pkg-config --static --libs glfw3 -lglfw -lrt -lm -ldl
@@ -29,7 +29,7 @@ pkg-config --static --libs glfw3 -lglfw -lrt -lm -ldl
   - https://www.glfw.org/docs/3.3/build_guide.html
   - https://stackoverflow.com/questions/78353973/meson-wrap-install-of-glfw3-is-not-able-to-find-libglfw3-3-dll-when-running-comp
 
-## `meson.build` 간단하게 build(glfw3)
+## `meson.build` 간단하게 build(glfw3)[|🔝|](#link)
 
 ```bash
 project('gui_c_glfw3', 'c')
@@ -97,7 +97,7 @@ executable('project',
 
 <hr />
 
-## justfile(meson치기 귀찮다.)
+## justfile(meson치기 귀찮다.)[|🔝|](#link)
 
 ```justfile
 target := "target"
@@ -112,7 +112,7 @@ c:
     rm -rf {{target}}
 ```
 
-## `.clang-format`
+## `.clang-format`[|🔝|](#link)
 
 ```.clang-format
 # BasedOnStyle: WebKit
@@ -139,7 +139,7 @@ ColumnLimit: 80
 
 <hr />
 
-# Install
+# Install[|🔝|](#link)
 
 - https://www.glfw.org/
 
@@ -162,5 +162,5 @@ brew install glfw mesa-glu && brew install --cask font-roboto-mono
 <hr />
 
 
-# (240513)Make a GUI Calculator in C like a real Chad | Cococry
+# (240513)Make a GUI Calculator in C like a real Chad | Cococry[|🔝|](#link)
 - https://youtu.be/2oJTEpc9qmc?si=FieNrs_jZnEYRSNO
