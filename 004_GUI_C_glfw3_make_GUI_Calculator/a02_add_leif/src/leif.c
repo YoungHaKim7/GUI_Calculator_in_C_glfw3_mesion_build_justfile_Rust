@@ -1,4 +1,4 @@
-#include "leif.h"
+#include "headers/leif.h"
 #include <stdbool.h>
 
 void lf_init_glfw(int width, int height, GLFWwindow* window) {

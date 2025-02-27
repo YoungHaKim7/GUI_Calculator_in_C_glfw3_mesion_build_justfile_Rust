@@ -1,52 +1,10 @@
-// #include <GL/gl.h>
-// #include <GLFW/glfw3.h>
-// #include <stdio.h>
-// #include "leif.h"
-
-
-// #define WINW 400
-// #define WINH 600
-
-// #define PANELH WINW / 3.0f
-
-// int main()
-// {
-//     glfwInit();
-
-//     GLFWwindow* window = glfwCreateWindow(WINW, WINH, "calc", NULL, NULL);
-
-//     glfwMakeContextCurrent(window);
-
-//     lf_init_glfw(WINW, WINH, window);
-
-//     while (!glfwWindowShouldClose(window)) {
-//         glClear(GL_COLOR_BUFFER_BIT);
-//         glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
-
-//         lf_begin();
-
-//         lf_div_bigin(((vec2s){0, 0}), ((vec2s){WINW, PANELH}), true);
-
-//         lf_div_end();
-
-//         lf_end();
-
-//         glfwPollEvents();
-//         glfwSwapBuffers(window);
-//     }
-
-//     glfwDestroyWindow(window);
-//     glfwTerminate();
-
-//     return 0;
-// }
-
 #include <GL/gl.h>
 #include <GLFW/glfw3.h>
 #include <stdio.h>
 #include <libelf.h>
 #include <stdbool.h>
-#include "leif.h" // Include the header for custom functions and types
+
+#include "headers/leif.h" // Include the header for custom functions and types
 
 #define WINW 400
 #define WINH 600
