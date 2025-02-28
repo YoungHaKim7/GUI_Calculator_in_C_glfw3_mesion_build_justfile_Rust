@@ -9,3 +9,6 @@ pkg-config --static --libs glfw3 -lglfw -lrt -lm -ldl
 - https://github.com/lief-project/LIEF
 
 - https://launchpad.net/ubuntu/jammy/+package/libelf-dev
+
+# gtk -> glfw3로 변환해서 해보자
+- https://github.com/LasCreations/Gui-Calculator-using-C
