@@ -79,16 +79,6 @@ void handle_button_click(const char *label) {
     }
 }
 
-// Function to render text
-void render_text(const char *text, float x, float y, float scale) {
-    // Placeholder for text rendering (you can use a library like FreeType for proper text rendering)
-    glRasterPos2f(x, y);
-    while (*text) {
-        glutBitmapCharacter(GLUT_BITMAP_HELVETICA_18, *text);
-        text++;
-    }
-}
-
 // Function to render buttons
 void render_buttons() {
     for (int i = 0; i < 17; i++) {
@@ -98,8 +88,6 @@ void render_buttons() {
         glVertex2f(buttons[i].x + buttons[i].w, buttons[i].y + buttons[i].h);
         glVertex2f(buttons[i].x, buttons[i].y + buttons[i].h);
         glEnd();
-
-        render_text(button_labels[i], buttons[i].x + 10, buttons[i].y + 10, 1.0);
     }
 }
 
@@ -145,7 +133,6 @@ void render(GLFWwindow *window) {
     glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
 
     render_buttons();
-    render_text(output_buffer, 10, WIN_HEIGHT - 30, 1.0);
 
     glfwSwapBuffers(window);
 }

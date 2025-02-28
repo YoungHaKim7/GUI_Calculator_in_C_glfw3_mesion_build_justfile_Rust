@@ -32,6 +32,7 @@ executable(my_project_name,
           src_files,
           # dependencies : [glfwdep, opengldep, elfdep],
           dependencies : [glfwdep, opengldep],
+          install: true,
           c_args: [
             '-pedantic',       # Enable pedantic warnings
             '-pedantic-errors', # Treat pedantic warnings as errors
