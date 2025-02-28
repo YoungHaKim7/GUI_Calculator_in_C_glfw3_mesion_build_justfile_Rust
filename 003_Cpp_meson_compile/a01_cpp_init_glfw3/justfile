@@ -2,6 +2,7 @@ target := "target"
 project_name := `basename "$(pwd)"`
 
 r:
+    export CXX=clang++
     rm -rf {{target}}
     meson setup {{target}}
     meson compile -C {{target}}
