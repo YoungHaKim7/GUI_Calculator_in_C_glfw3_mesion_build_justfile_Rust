@@ -21,17 +21,17 @@ glfwdep = dependency('glfw3')
 opengldep = dependency('gl')
 
 src_files = [
-  'src/main.c',
-  'src/leif.c'
+  'src/main.c'
 ]
 # Link against the libelf library
-elfdep = meson.get_compiler('c').find_library('elf', required: true)
+# elfdep = meson.get_compiler('c').find_library('elf', required: true)
 
 
 # Build the executable(폴더 src로 넣어서 깔끔하게)
 executable(my_project_name,
           src_files,
-          dependencies : [glfwdep, opengldep, elfdep],
+          # dependencies : [glfwdep, opengldep, elfdep],
+          dependencies : [glfwdep, opengldep],
           c_args: [
             '-pedantic',       # Enable pedantic warnings
             '-pedantic-errors', # Treat pedantic warnings as errors
