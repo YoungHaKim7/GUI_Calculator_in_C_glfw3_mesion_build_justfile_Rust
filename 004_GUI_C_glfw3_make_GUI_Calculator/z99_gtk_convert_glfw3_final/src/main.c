@@ -79,18 +79,6 @@ void handle_button_click(const char *label) {
     }
 }
 
-// Function to render buttons
-void render_buttons() {
-    for (int i = 0; i < 17; i++) {
-        glBegin(GL_QUADS);
-        glVertex2f(buttons[i].x, buttons[i].y);
-        glVertex2f(buttons[i].x + buttons[i].w, buttons[i].y);
-        glVertex2f(buttons[i].x + buttons[i].w, buttons[i].y + buttons[i].h);
-        glVertex2f(buttons[i].x, buttons[i].y + buttons[i].h);
-        glEnd();
-    }
-}
-
 // Function to initialize buttons
 void init_buttons() {
     float x = 10, y = WIN_HEIGHT - 60;
@@ -127,11 +115,43 @@ void mouse_button_callback(GLFWwindow *window, int button, int action, int mods)
     }
 }
 
+// Function to render buttons
+void render_buttons() {
+    for (int i = 0; i < 17; i++) {
+        glColor3f(0.8f, 0.8f, 0.8f); // Button color (light gray)
+        glBegin(GL_QUADS);
+        glVertex2f(buttons[i].x, buttons[i].y);
+        glVertex2f(buttons[i].x + buttons[i].w, buttons[i].y);
+        glVertex2f(buttons[i].x + buttons[i].w, buttons[i].y + buttons[i].h);
+        glVertex2f(buttons[i].x, buttons[i].y + buttons[i].h);
+        glEnd();
+
+        // Draw button border
+        glColor3f(0.0f, 0.0f, 0.0f); // Border color (black)
+        glLineWidth(2.0f);
+        glBegin(GL_LINE_LOOP);
+        glVertex2f(buttons[i].x, buttons[i].y);
+        glVertex2f(buttons[i].x + buttons[i].w, buttons[i].y);
+        glVertex2f(buttons[i].x + buttons[i].w, buttons[i].y + buttons[i].h);
+        glVertex2f(buttons[i].x, buttons[i].y + buttons[i].h);
+        glEnd();
+    }
+}
+
 // Main rendering function
 void render(GLFWwindow *window) {
     glClear(GL_COLOR_BUFFER_BIT);
-    glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
+    glClearColor(0.1f, 0.1f, 0.1f, 1.0f); // Background color (dark gray)
 
+    // Set up the OpenGL projection matrix
+    glMatrixMode(GL_PROJECTION);
+    glLoadIdentity();
+    glOrtho(0, WIN_WIDTH, 0, WIN_HEIGHT, -1, 1); // 2D orthographic projection
+
+    glMatrixMode(GL_MODELVIEW);
+    glLoadIdentity();
+
+    // Render buttons
     render_buttons();
 
     glfwSwapBuffers(window);
@@ -153,8 +173,10 @@ int main() {
     glfwMakeContextCurrent(window);
     glfwSetMouseButtonCallback(window, mouse_button_callback);
 
+    // Initialize buttons
     init_buttons();
 
+    // Main loop
     while (!glfwWindowShouldClose(window)) {
         render(window);
         glfwPollEvents();
