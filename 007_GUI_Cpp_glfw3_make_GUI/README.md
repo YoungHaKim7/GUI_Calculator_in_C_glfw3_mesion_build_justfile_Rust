@@ -29,8 +29,8 @@
 ```meson
 
 # c
-c_std=none, c89, c99, c11, c17, c18, c2x, c23, c2y,
-gnu89, gnu99, gnu11, gnu17, gnu18, gnu2x, gnu23, gnu2y
+# c_std=none, c89, c99, c11, c17, c18, c2x, c23, c2y,
+# gnu89, gnu99, gnu11, gnu17, gnu18, gnu2x, gnu23, gnu2y
 
 project(
   'my_project', 'c',
@@ -45,9 +45,9 @@ project(
 
 
 # cpp
-cpp_std=none, c++98, c++03, c++11, c++14, c++17, c++20
-c++2a, c++1z, gnu++03, gnu++11, gnu++14, gnu++17, gnu++1z,
-gnu++2a, gnu++20, vc++14, vc++17, vc++20, vc++latest
+# cpp_std=none, c++98, c++03, c++11, c++14, c++17, c++20
+# c++2a, c++1z, gnu++03, gnu++11, gnu++14, gnu++17, gnu++1z,
+# gnu++2a, gnu++20, vc++14, vc++17, vc++20, vc++latest
 
 project(
   'my_init', ['c','cpp'],
