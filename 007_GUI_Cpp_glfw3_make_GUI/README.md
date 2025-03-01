@@ -18,3 +18,6 @@
 - khronos
   - https://www.khronos.org/opengl/wiki/Main_Page
   - https://github.com/KhronosGroup
+
+- color
+  - https://convertingcolors.com/cmyk-color-0.13_0.13_0.00_0.31.html

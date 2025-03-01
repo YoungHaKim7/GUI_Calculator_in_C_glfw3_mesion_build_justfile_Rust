@@ -6,7 +6,11 @@
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void processInput(GLFWwindow* window);
 
-// settings
+// settings   unsigned int -> u32
+
+// rust style
+// const SCR_WIDTH:u32 = 800;
+
 const unsigned int SCR_WIDTH = 800;
 const unsigned int SCR_HEIGHT = 600;
 
@@ -49,7 +53,9 @@ int main()
     // --------------------
     GLFWwindow* window
         = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "LearnOpenGL", NULL, NULL);
+    // result
     if (window == NULL) {
+        // error code
         std::cout << "Failed to create GLFW window" << std::endl;
         glfwTerminate();
         return -1;
