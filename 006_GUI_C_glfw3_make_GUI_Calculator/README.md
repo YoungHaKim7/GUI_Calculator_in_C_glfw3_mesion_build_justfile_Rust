@@ -4,6 +4,9 @@
 pkg-config --static --libs glfw3 -lglfw -lrt -lm -ldl
 ```
 
+- 여기서 대부분 가져와야함.
+  - https://github.com/glfw/glfw
+
 
 # LIEF - Library to Instrument Executable Formats (C++, Python, Rust) 
 - https://github.com/lief-project/LIEF
