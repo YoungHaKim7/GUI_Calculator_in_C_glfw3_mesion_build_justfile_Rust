@@ -22,6 +22,20 @@
 - color
   - https://convertingcolors.com/cmyk-color-0.13_0.13_0.00_0.31.html
 
+<hr />
+
+# justfile에 컴파일 바꾸기
+
+- 첫줄에 `export`하면 됨.
+
+```justfile
+export CC=clang
+export CXX=clang++
+
+meson build-clang
+```
+
+
 # meson.build
 
 - https://mesonbuild.com/Builtin-options.html
