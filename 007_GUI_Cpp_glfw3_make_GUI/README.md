@@ -21,3 +21,53 @@
 
 - color
   - https://convertingcolors.com/cmyk-color-0.13_0.13_0.00_0.31.html
+
+# meson.build
+
+- https://mesonbuild.com/Builtin-options.html
+
+```meson
+
+# c
+c_std=none, c89, c99, c11, c17, c18, c2x, c23, c2y,
+gnu89, gnu99, gnu11, gnu17, gnu18, gnu2x, gnu23, gnu2y
+
+project(
+  'my_project', 'c',
+  version : '0.1',
+  default_options : [
+    'buildtype=debugoptimized', # Equivalent to -O3
+    'c_std=c11',               # Use C11 standard (commonly used with -pedantic) or c17
+    'warning_level=3',         # Equivalent to -Wall -Wextra
+    'b_lto=true',              # Enable Link-Time Optimization (optional, for -O3)
+    'b_pie=true',              # Enable Position Independent Executable (optional)
+])
+
+
+# cpp
+cpp_std=none, c++98, c++03, c++11, c++14, c++17, c++20
+c++2a, c++1z, gnu++03, gnu++11, gnu++14, gnu++17, gnu++1z,
+gnu++2a, gnu++20, vc++14, vc++17, vc++20, vc++latest
+
+project(
+  'my_init', ['c','cpp'],
+  version : '0.1',
+  default_options : [
+    'buildtype=debugoptimized',
+    'cpp_std=c++17',
+    'warning_level=1',
+  ])
+
+```
+
+- https://mesonbuild.com/Builtin-options.html#base-options
+
+- 최적화의 종류(주로 debugoptimized, release만 쓰면 될듯)
+```meson
+buildtype
+
+debug
+debugoptimized
+release 	
+minsize 	
+```
