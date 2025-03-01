@@ -19,7 +19,7 @@ XrandrDep = dependency('Xrandr', required: false)
 # XineramaDep = dependency('Xinerama', required: false)
 # XcursorDep = dependency('Xcursor', required: false)
 
-libsPath = '/usr/lib/x86_64-linux-gnu/'
+libsPath = '/opt/homebrew/include'
 if not glfwDep.found()
   glfwDep = compiler.find_library('glfw3', dirs: libsPath)
 endif
