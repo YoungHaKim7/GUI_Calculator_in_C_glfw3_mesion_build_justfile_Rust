@@ -52,6 +52,8 @@ src_files = [
   'src/glad.c'
 ]
 
+#  meson.project_name(),   이렇게 하면됨 (겁나 간단함)
+
 inc = include_directories('include')
 executable(my_project_name, src_files,
           include_directories : inc,
