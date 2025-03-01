@@ -71,3 +71,19 @@ debugoptimized
 release 	
 minsize 	
 ```
+
+# Details for warning_level
+
+- Exact flags per warning level is compiler specific, but there is an approximative table for most common compilers.
+
+|Warning level|GCC/Clang|MSVC|
+|-|-|-|
+|0| | |		
+|1|-Wall||/W2|
+|2|-Wall -Wextra|/W3|
+|3|	-Wall -Wextra -Wpedantic|/W4|
+
+<hr />
+
+<br>
+everything 	-Weverything 	/Wall
