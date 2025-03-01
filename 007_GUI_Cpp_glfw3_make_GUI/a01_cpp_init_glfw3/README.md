@@ -1,0 +1,7 @@
+# run
+
+```bash
+just r
+```
+
+
