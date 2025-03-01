@@ -17,3 +17,4 @@
   - https://github.com/Polytonic/Glitter
 - khronos
   - https://www.khronos.org/opengl/wiki/Main_Page
+  - https://github.com/KhronosGroup
