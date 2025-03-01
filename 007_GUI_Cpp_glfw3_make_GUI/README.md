@@ -82,8 +82,9 @@ minsize
 |1|-Wall||/W2|
 |2|-Wall -Wextra|/W3|
 |3|	-Wall -Wextra -Wpedantic|/W4|
+|everything|-Weverything|/Wall|
 
 <hr />
 
 <br>
-everything 	-Weverything 	/Wall
+
