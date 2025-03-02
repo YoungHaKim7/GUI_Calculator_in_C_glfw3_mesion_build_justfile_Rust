@@ -24,6 +24,14 @@
 
 <hr />
 
+# small project
+
+- [(230919)I made my own UI library in C++, How to design a complicated system? | Low Level Game Dev](https://youtu.be/hCLjiManL04?si=rr2cIviz3i5YulOT)
+  - https://github.com/meemknight/glui
+
+
+<hr />
+
 # justfile에 컴파일 바꾸기
 
 - 첫줄에 `export`하면 됨.
