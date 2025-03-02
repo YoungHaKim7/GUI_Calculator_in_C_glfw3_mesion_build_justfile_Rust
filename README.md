@@ -59,6 +59,12 @@
 
 <hr />
 
+
+# (영상모아보기) Modern OpenGL experiments |3D Programming
+- https://youtube.com/playlist?list=PLt7OnaGrzzxRxfHUeAdUspNdVVy8P98Q2&si=DWyU77v_zBbiJ4jR
+
+<hr />
+
 # build[|🔝|](#link)
 
 ```bash
