@@ -7,6 +7,8 @@
 
 # link
 
+- [(외부링크)OpenGL공식사이트https://www.opengl.org/](https://www.opengl.org/)
+
 - [https://www.khronos.org/opengl/wiki/OpenGL_Shading_Language](https://www.khronos.org/opengl/wiki/OpenGL_Shading_Language)
 
 - [외부링크OpenGL 소개: OpenGL, GLFW, GLEW란? [OpenGL E02]OpenGL/GLEW/GLFW](https://kyoungwhankim.github.io/ko/blog/opengl_intro/)
