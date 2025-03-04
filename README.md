@@ -29,7 +29,7 @@
 - glfw
   - [glfw문서정리 context_guide]()
 
-- [Immediate mode가 왜 안 좋은지 잘 설명됨.](https://learnopengl.com/Getting-started/OpenGL)
+- [(외부링크) Immediate mode가 왜 안 좋은지 잘 설명됨.(Core-profile vs Immediate mode)](https://learnopengl.com/Getting-started/OpenGL)
 
 <hr />
 
