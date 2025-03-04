@@ -46,6 +46,9 @@
   - https://www.glfw.org/docs/3.3/intro_guide.html
 
 
+- [Vulkan이해하기]()
+  - [DXC / ICD / GLSL / HLSL / SPIR-V / VMA / Vulkan Instance, Layer, Loader 용어 이해하기]()
+
 <hr />
 
 # glfw2 -> glfw3 migration guide
@@ -238,3 +241,23 @@ brew install --cask xquartz
 
 # (240513)Make a GUI Calculator in C like a real Chad | Cococry[|🔝|](#link)
 - https://youtu.be/2oJTEpc9qmc?si=FieNrs_jZnEYRSNO
+
+<hr />
+
+# Vulkan이해[|🔝|](#link)
+
+# DXC / ICD / GLSL / HLSL / SPIR-V / VMA / Vulkan Instance, Layer, Loader 용어 이해하기[|🔝|](#link)
+
+- https://vulkan.lunarg.com/doc/sdk/1.4.304.1/windows/getting_started.html
+
+|Term|Description|
+|-|-|
+|DXC|	Microsoft's Open Source DirectX Shader Compiler|
+|ICD| 	Installable Client Driver: A Vulkan compatible display driver
+|GLSL| 	OpenGL Shading Language
+|HLSL| 	DirectX High-Level Shading Language
+|SPIR-V| 	Standard Portable Intermediate Representation is a cross-API intermediate language (IL) that natively represents parallel compute and graphics programs
+|VMA| 	The Vulkan Memory Allocator library provided by AMD.
+|Vulkan Instance| 	The Vulkan API object that stores all per-application states
+|Vulkan Layer| 	A library designed to work as a plug-in for the loader. It usually serves to provide validation and debugging functionality to applications
+|Vulkan Loader| 	A library which implements the Vulkan API entry points and manages layers, extensions, and drivers. It is found in the independent hardware vendor driver installs
