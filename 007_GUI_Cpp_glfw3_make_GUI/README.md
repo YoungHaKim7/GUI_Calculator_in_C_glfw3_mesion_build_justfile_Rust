@@ -27,7 +27,7 @@
 # 중력 구현 미쳤네
 - https://github.com/kavan010/gravity_sim/blob/main/gravity_sim.cpp
   - https://github.com/kavan010/gravity_sim/
-  - [위 코드 영상 ](https://youtu.be/_YbGWoUaZg0?si=kU_obTQ1VInqC_Pr)
+  - [위 코드 영상250301 Simulating Gravity in C++ | Kavan](https://youtu.be/_YbGWoUaZg0?si=kU_obTQ1VInqC_Pr)
 
 
 # small project
