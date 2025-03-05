@@ -24,6 +24,12 @@
 
 <hr />
 
+# 중력 구현 미쳤네
+- https://github.com/kavan010/gravity_sim/blob/main/gravity_sim.cpp
+  - https://github.com/kavan010/gravity_sim/
+  - [위 코드 영상 ](https://youtu.be/_YbGWoUaZg0?si=kU_obTQ1VInqC_Pr)
+
+
 # small project
 
 - [(230919)I made my own UI library in C++, How to design a complicated system? | Low Level Game Dev](https://youtu.be/hCLjiManL04?si=rr2cIviz3i5YulOT)
