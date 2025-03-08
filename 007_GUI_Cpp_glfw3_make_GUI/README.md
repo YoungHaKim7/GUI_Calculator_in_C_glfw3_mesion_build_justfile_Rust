@@ -24,6 +24,11 @@
 
 <hr />
 
+# (250309)OpenGL/Vulkan c++ game engine dev: Cosy Internet Safe Space EDITION | tokyospliff
+- https://www.youtube.com/live/4XLVdslHawM?si=PCYgeKi7JY01NLJx
+
+<hr />
+
 # 중력 구현 미쳤네
 - https://github.com/kavan010/gravity_sim/blob/main/gravity_sim.cpp
   - https://github.com/kavan010/gravity_sim/
