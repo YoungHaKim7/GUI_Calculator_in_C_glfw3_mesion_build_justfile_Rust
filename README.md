@@ -32,6 +32,7 @@
   - [glfw문서정리 context_guide]()
 
 - [(외부링크) Immediate mode가 왜 안 좋은지 잘 설명됨.(Core-profile vs Immediate mode)](https://learnopengl.com/Getting-started/OpenGL)
+  - [(외부링크_stackoverflow)What does "immediate mode" mean in OpenGL?](https://stackoverflow.com/questions/6733934/what-does-immediate-mode-mean-in-opengl)
 
 <hr />
 
