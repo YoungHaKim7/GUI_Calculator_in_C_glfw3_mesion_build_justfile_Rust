@@ -18,3 +18,6 @@ pkg-config --static --libs glfw3 -lglfw -lrt -lm -ldl
 
 # 다른 사람의 예시
 - https://github.com/ShyguyBerlin/OpenGLDemo
+
+# What does "immediate mode" mean in OpenGL?
+- https://stackoverflow.com/questions/6733934/what-does-immediate-mode-mean-in-opengl
