@@ -51,6 +51,7 @@
 
 - [Vulkan이해하기](#vulkan이해)
   - [DXC / ICD / GLSL / HLSL / SPIR-V / VMA / Vulkan Instance, Layer, Loader 용어 이해하기](#dxc--icd--glsl--hlsl--spir-v--vma--vulkan-instance-layer-loader-용어-이해하기)
+  - [(외부링크)GPU 잘 정리됨 굿. 표로 깔끔_https://github.com/Vincent-Therrien/gpu-arena](https://github.com/Vincent-Therrien/gpu-arena)
 
 <hr />
 
@@ -253,6 +254,7 @@ brew install --cask xquartz
 # DXC / ICD / GLSL / HLSL / SPIR-V / VMA / Vulkan Instance, Layer, Loader 용어 이해하기[|🔝|](#link)
 
 - https://vulkan.lunarg.com/doc/sdk/1.4.304.1/windows/getting_started.html
+- [(외부링크)GPU 잘 정리됨 굿. 표로 깔끔_https://github.com/Vincent-Therrien/gpu-arena](https://github.com/Vincent-Therrien/gpu-arena)
 
 |Term|Description|
 |-|-|
