@@ -231,7 +231,7 @@ sudo apt install libwayland-dev libxkbcommon-dev xorg-dev
 
 # macOS
 brew install glfw glfw3 mesa-glu && brew install --cask font-roboto-mono
-brew install --cask xquartz
+# xquartz 어떻게 쓰는지 모르겠음 일단 삭제!! brew install --cask xquartz
 
 ```
 - https://github.com/zamirmf/OpenGLOnMac
